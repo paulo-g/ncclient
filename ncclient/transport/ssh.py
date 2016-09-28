@@ -273,7 +273,6 @@ class SSHSession(Session):
                         expchunksize = chunksize = 0
                         parsing_state11 = idle
                         inendpos = parsing_pos11 = 0
-                        break
                     else:
                         logger.debug('%s (%s: expect newline)'%(pre, state))
                         raise Exception
